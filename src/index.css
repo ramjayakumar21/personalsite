@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./public/pipes-white-bg.webp);
+
+  font-family: Poppins;
+}
+
+
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 0px 40px;
+  border: solid rgb(217, 217, 217) 3px;
+  border-radius: 30px;
+}
+
+.info {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.info--headshot {
+  padding: 0px;
+  width: 200px;
+}
+
+.info--text {
+  margin-left: 30px;
+}
+
+.info--text h1{
+  
+  font-weight: 500;
+  margin: 0px
+}
+
+.info--text p{
+  font-weight: 300;
+  margin: 0px;
+  color: rgb(75, 58, 228);
+}
