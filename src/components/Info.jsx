@@ -7,7 +7,19 @@ export default function Info() {
             <div className="info--text">
                 <h1>Ram Jayakumar</h1>
                 <p>Computer Science and Statistics, Second Year UBC</p>
-                <i class="fa-solid fa-envelope"></i>
+                <div className="buttons">
+                    <div className="info--email">
+                        <i class="fa-solid fa-envelope fa-lg"></i>
+                        <p>ramjayakumar21@gmail.com</p>
+                    </div>
+                    
+                    <a href="https://github.com/ramjayakumar21" className="info--github">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ram-jayakumar-2a096420b/" className="info--linkedin">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </a>
+                </div>
             </div>
             
         </div>
