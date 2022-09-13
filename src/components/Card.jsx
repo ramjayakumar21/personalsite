@@ -3,11 +3,11 @@ import About from "./About";
 import Footer from "./Footer";
 import Info from "./Info";
 
-export default function Card() {
+export default function Card(props) {
     return (
-        <div className="card">
-            <Info />
-            <About />
+        <div className={`card ${props.darkMode ? "dark" : ""}`}>
+            <Info darkMode={props.darkMode}/>
+            <About darkMode={props.darkMode}/>
             <Footer />
         </div>
     )

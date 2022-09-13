@@ -1,10 +1,12 @@
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/pipes-white-bg.webp);
   font-family: Poppins;
   padding: 100px 0px;
+  background-image: url(/pipes-white-bg.webp);
+  transition: all 0.5s;
 }
 
 a:link {
@@ -26,19 +28,28 @@ h1 {
 
 p {
   margin: 10px 0px;
+  transition: all 0.5s;
 }
 
 
 
+
+
 .card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background-color: rgb(255, 255, 255);
-  padding: 0px 40px;
+  padding: 20px 40px;
   border: solid rgb(217, 217, 217) 3px;
   border-radius: 30px;
   max-width: 700px;
 
   -webkit-animation: fadein 1.2s; /* Safari, Chrome and Opera > 12.1 */
   animation: fadein 1.2s;
+}
+
+
+.buttons--social {
+  display: flex;
 }
 
 @keyframes fadein {
@@ -53,7 +64,7 @@ p {
     padding: 0px 40px;
     border: solid rgb(217, 217, 217) 3px;
     border-radius: 30px;
-    max-width: 400px;
+    max-width: 250px;
   
     -webkit-animation: fadein 1.2s; /* Safari, Chrome and Opera > 12.1 */
     animation: fadein 1.2s;
@@ -65,6 +76,13 @@ p {
     margin-top: 10px;
     align-items: center;
   }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
 
 }
 
@@ -152,6 +170,10 @@ p {
   transition: all 0.2s;
 }
 
+.about {
+  margin-top: 10px;
+}
+
 .purple {
   color:rgb(75, 58, 228)
 }
@@ -174,8 +196,36 @@ a {
   color: rgb(127, 156, 250)
 }
 
+.darkModeButton {
+  user-select: none;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: #b9b9b9 solid 1px;
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 30px;
+  padding: 20px;
+}
+
+.darkModeButton:hover {
+  background-color: #a1a1a1;
+}
+
 /* selected link */
 
-  
+.dark {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.info--text.dark > p {
+  color: orange
+}
+
+.orange {
+  color: orange
+}
 
 
