@@ -1,18 +1,27 @@
-import { useState } from 'react'
-import React from 'react'
-import reactLogo from './assets/react.svg'
-import Card from './components/Card'
+import Draggable from 'react-draggable'
+import {useState} from 'react'
+import Desktop from './components/Desktop'
 import DarkModeButton from './components/DarkModeButton'
+import { ChakraProvider, Tabs, TabList, Tab} from '@chakra-ui/react'
 import "./index.css"
+import Projects from './components/Projects'
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(false);
+  const [projectsVisible, setProjectsVisible] = useState(false)
 
   return (
-  <div className='content'>
-    <DarkModeButton darkMode={darkMode} setDarkMode={setDarkMode}></DarkModeButton>
-    <Card darkMode={darkMode}/>
-  </div>
+    <div className='desktop bg-gray-800 pt-36'>
+        <Desktop 
+          projectsVisible={projectsVisible}
+          setProjectsVisible={setProjectsVisible}
+        />
+        <div style={{"display":(projectsVisible) ? "block" : "none"}}>
+          <Projects
+              projectsVisible={projectsVisible}
+              setProjectsVisible={setProjectsVisible}
+          />
+        </div>
+    </div>
   )
 }
 
