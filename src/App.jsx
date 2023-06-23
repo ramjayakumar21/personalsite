@@ -1,29 +1,26 @@
 import Draggable from 'react-draggable'
-import {useState} from 'react'
+import {useState, createContext} from 'react'
 import Desktop from './components/Desktop'
 import DarkModeButton from './components/DarkModeButton'
 import { ChakraProvider, Tabs, TabList, Tab} from '@chakra-ui/react'
 import "./index.css"
 import Projects from './components/Projects'
 
+const VisibleWindowContext = createContext()
+
 function App() {
-  const [projectsVisible, setProjectsVisible] = useState(false)
+  const [visibleWindow, setVisibleWindow] = useState("projects")
+  const vis = {visibleWindow, setVisibleWindow}
+
 
   return (
-    <div className='desktop bg-gray-800 pt-36'>
-        <Desktop 
-          projectsVisible={projectsVisible}
-          setProjectsVisible={setProjectsVisible}
-        />
-        <div style={{"display":(projectsVisible) ? "block" : "none"}}>
-          <Projects
-              projectsVisible={projectsVisible}
-              setProjectsVisible={setProjectsVisible}
-          />
-        </div>
-    </div>
+    <VisibleWindowContext.Provider value={vis}>
+      <div className='desktop select-none bg-gray-800 pt-10'>
+          <Desktop />
+      </div>
+    </VisibleWindowContext.Provider>
   )
 }
 
 
-export default App
+export {App, VisibleWindowContext}
