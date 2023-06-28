@@ -18,6 +18,7 @@ a:visited {
 }
 
 .content {
+  min-width: none;
   display: flex;
   justify-content: baseline;
 }
@@ -64,7 +65,6 @@ p {
     padding: 0px 40px;
     border: solid rgb(217, 217, 217) 3px;
     border-radius: 30px;
-    max-width: 250px;
   
     -webkit-animation: fadein 1.2s; /* Safari, Chrome and Opera > 12.1 */
     animation: fadein 1.2s;

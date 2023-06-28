@@ -6,7 +6,7 @@ export default function Info(props) {
             <img className='info--headshot' src="/Ram-headshot.png"></img>
             <div className={`info--text ${props.darkMode ? "dark" : ""}`}>
                 <h1>Ram Jayakumar</h1>
-                <p>Computer Science and Statistics, Second Year UBC</p>
+                <p>Computer Science Third Year @ UBC</p>
                 <div className="buttons">
                     <div className="info--email">
                         <i class="fa-solid fa-envelope fa-lg"></i>
