@@ -7,18 +7,18 @@ import "../index.css"
 export default function Info() {
     
     return (
-        <div className="flex flex-col mx-auto ">
-            <div className="info text-slate-100 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md  md:p-10 sm:p-5 md:flex justify-center items-center gap-10 h-1/4">
-                <img className='sm:ml-10 max-w-s w-4/12 drop-shadow-2xl' src="/Ram-headshot.png"></img>
+        <div className="flex flex-col">
+            <div className="info text-slate-100 bg-gradient-to-r p-10 from-purple-500  via-red-600 background-animate to-blue-500 justify-center items-center gap-10">
+                <img className='w-6/12 drop-shadow-2xl mb-5' src="/Ram-headshot.png"></img>
                 <div>
                     <h1 className="text-6xl object-cover mb-2 drop-shadow-2xl">Hi! I'm <span className="text-6xl font-semibold hover:underline hover:decoration-solid">Ram Jayakumar</span></h1>
                     <p className="text-xl">3rd Year Computer Science student @ UBC</p>
-                    <div className="buttons flex gap-2 mt-2">
+                    <div className="buttons flex gap-2 mt-2 flex-wrap">
                         <div className="flex items-center p-2 bg-stone-800 w-fit">
                             <i class="fa-solid fa-envelope fa-lg"></i>
-                            <p className="ml-2 text-lg">ramjayakumar21@gmail.com</p>
+                            <p className="text-lg">ramjayakumar21@gmail.com</p>
                         </div>
-                        <div className="buttons--social flex items-center gap-2">
+                        <div className="buttons--social flex flex-wrap items-center gap-2">
                             <a href="https://github.com/ramjayakumar21" className="bg-slate-900 p-3 hover:bg-slate-600 rounded-md">
                                 <i class="fa-brands fa-github fa-xl "></i>
                             </a>
@@ -28,15 +28,16 @@ export default function Info() {
                         </div>
                     </div>
                 </div>
-
-                
-            </div>
-            
-                <div className="text-xl mt-5 rounded-lg">
+                <div className="text-xl mt-5 rounded-lg p-5">
                     I am a third year CPSC student at the University of British Columbia with a passion for software development and data science. 
                     I have multiple projects ranging from full stack web development to data analysis that you can visit on the projects page. 
                     Feel free to contact me through my email for any opportunities or questions!
                 </div>
+
+                
+            </div>
+            
+                
         </div>
 
         
