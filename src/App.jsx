@@ -23,6 +23,7 @@ import Projects from "./components/Projects";
 import Info from "./components/Info";
 import Contact from "./components/About";
 import Article from "./components/Article";
+import Experience from "./components/Experience";
 
 const VisibleWindowContext = createContext();
 
@@ -31,26 +32,43 @@ function App() {
   const [visibleWindow, setVisibleWindow] = useState("projects");
   const vis = { visibleWindow, setVisibleWindow };
 
+  // exprience will have uas and ubc rapid blog, projects will also be blog posts about projects
+
   return (
     <BrowserRouter>
       <VisibleWindowContext.Provider value={vis}>
         <ChakraProvider>
-          <Tabs variant="solid-rounded" size="lg" colorScheme="blue">
+          <Tabs variant="" size="lg" colorScheme="blue">
             <div className="menu dark:bg-[#1F2937] bg-[#f2efef] dark:text-white text-cyan-600 md:block p-5 flex font-mono w-full">
               <TabList>
                 <div className="text-4xl font-bold p-2 mr-auto">
                   <Link to=".\">Ram Jayakumar</Link>
                 </div>
-                <div className="gap-1 mr-5 p-1 px-3 hidden md:flex rounded-md text-blue-800">
-                  <Link to=".\">
-                    <Tab>Home</Tab>
-                  </Link>
+                <div className="gap-1 mr-5 p-1 px-3 hidden md:flex rounded-md text-white">
+                  <div className="group">
+                    <Link to=".\">
+                      <Tab>Home</Tab>
+                      <span class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sky-600"></span>
+                    </Link>
+                  </div>
+                  <div className="group">
                   <Link to=".\projects">
                     <Tab >Projects</Tab>
+                    <span class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sky-600"></span>
                   </Link>
+                  </div>
+                  <div className="group">
+                  <Link to=".\experience">
+                    <Tab >Experience</Tab>
+                    <span class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sky-600"></span>
+                  </Link>
+                  </div>
+                  <div className="group">
                   <Link to=".\contact">
                     <Tab >About</Tab>
+                    <span class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sky-600"></span>
                   </Link>
+                  </div>
                 </div>
                 <div className="block p-2 flex ml-20 md:hidden rounded-md">
                   <IconButton
@@ -73,6 +91,9 @@ function App() {
                         <Link to=".\projects" onClick={onClose}>
                           <Tab>Projects</Tab>
                         </Link>
+                        <Link to=".\experience" onClick={onClose}>
+                          <Tab>Experience</Tab>
+                        </Link>
                         <Link to=".\contact" onClick={onClose}>
                           <Tab>About</Tab>
                         </Link>
@@ -92,6 +113,7 @@ function App() {
           <div className="dark:bg-[#1F2937] bg-[#f2efef] text-white font-mono">
             <Routes>
               <Route path="/projects/:id" element={<Article />} />
+              <Route path="/experience" element={<Experience/>}  />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/" element={<Info />} />

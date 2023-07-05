@@ -11,7 +11,7 @@ export default function Info() {
             <div className="info text-slate-100 bg-gradient-to-r p-10 from-purple-500  via-red-600 background-animate to-blue-500  gap-10">
                 
                 <div className="md:flex items-center gap-10 transition-transform ease-in duration-300">
-                    <img className='drop-shadow-2xl mb-5 max-w-sm ' src="/Ram-headshot.png"></img>
+                    <img className='drop-shadow-2xl mb-5 max-w-sm  transition-all hover:scale-105 ease-in-out' src="/Ram-headshot.png"></img>
                     <div>
                         <h1 className="text-6xl md:text-5xl object-cover mb-2 drop-shadow-2xl">:// Hi! I'm <span className="text-6xl font-semibold hover:underline hover:decoration-solid">Ram Jayakumar</span></h1>
                         <p className="text-xl">3rd Year Computer Science student @ UBC</p>
