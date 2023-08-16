@@ -22,10 +22,10 @@ export default function Info() {
                             </div>
                             <div className="buttons--social flex flex-wrap items-center gap-2">
                                 <a href="https://github.com/ramjayakumar21" className="bg-slate-900 p-3 hover:bg-slate-600 rounded-md">
-                                    <i class="fa-brands fa-github fa-xl "></i>
+                                    <i class="fa-brands fa-github fa-xl "></i> Github
                                 </a>
                                 <a href="https://www.linkedin.com/in/ram-jayakumar-2a096420b/" className="bg-blue-600 p-3 hover:bg-blue-700 rounded-md mr-5">
-                                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                                    <i class="fa-brands fa-linkedin fa-xl"></i> Linkedin
                                 </a>
                             </div>
                         </div>

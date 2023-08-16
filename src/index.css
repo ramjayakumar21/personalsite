@@ -12,6 +12,10 @@
   }
 }
 
+h1 {
+  font-size: large;
+}
+
 .background-animate {
   background-size: 400%;
 

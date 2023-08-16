@@ -1,7 +1,12 @@
+import ExperienceModules from "../modules/ExperienceModules";
+import experienceList from "../assets/experience.json"
+
 export default function Experience() {
     return (
-        <div>
-            UNDER CONSTRUCTION! COME BACK SOON! :)
+        <div className="p-10 flex flex-col items-center">
+            {experienceList.map(exp => {
+                return <ExperienceModules exp={exp} />
+            })}
         </div>
     )
 }

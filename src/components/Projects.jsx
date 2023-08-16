@@ -83,7 +83,7 @@ export default function Projects() {
         {projectsArray.map((project) => {
             return (
             
-                <Card maxW="md" mt={6}>
+                <Card maxW="md" mt={6} className="hover:scale-105 transition-all">
                 <Link to={project.link}>
                 <CardBody>
                   <Image

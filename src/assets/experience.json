@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Korotu Technology",
+        "position": "Full Stack Developer Internship",
+        "date-range": "Jan 2023 to Sep 2023",
+        "img": "./korotu_icon.jpeg",
+        "description": "test",
+        "link": "https://google.ca"
+    },
+    {
+        "name": "Unmanned Aerial Systems",
+        "position": "Software Team",
+        "date-range": "Jan 2023 to Present",
+        "img": "./korotu_icon.jpeg",
+        "description": "test",
+        "link": "https://bing.ca"
+    }
+]
