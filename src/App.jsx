@@ -128,7 +128,7 @@ function App() {
                       onClick={() => {
                         applyPreferredColorScheme("light");
                       }}
-                      icon={(colorScheme == "dark") ? <SunIcon /> : <MoonIcon />}
+                      icon={colorScheme == "dark" ? <SunIcon /> : <MoonIcon />}
                     ></IconButton>
                   </div>
                 </div>
@@ -163,16 +163,30 @@ function App() {
                     </div>
                     <div className="mt-auto p-1 px-3 mb-8 flex flex-col gap-2">
                       <Divider />
-                      <a href="https://github.com/ramjayakumar21">
-                        <h1>
-                          <i class="fa-brands fa-github fa-md"></i> Github{" "}
-                        </h1>
+
+                      <a
+                        href="https://github.com/ramjayakumar21"
+                        className="bg-slate-900 p-3 hover:bg-slate-600 rounded-md text-white"
+                      >
+                        <i class="fa-brands fa-github fa-xl "></i> Github
                       </a>
-                      <a href="https://www.linkedin.com/in/ram-jayakumar-2a096420b/">
-                        <h1>
-                          <i class="fa-brands fa-linkedin fa-md "></i> Linkedin{" "}
-                        </h1>
+                      <a
+                        href="https://www.linkedin.com/in/ram-jayakumar-2a096420b/"
+                        className="bg-blue-600 p-3 hover:bg-blue-700 rounded-md text-white"
+                      >
+                        <i class="fa-brands fa-linkedin fa-xl"></i> Linkedin
                       </a>
+                      <IconButton
+                        colorScheme="blue"
+                        aria-label="Sidebar"
+                        size="lg"
+                        onClick={() => {
+                          applyPreferredColorScheme("light");
+                        }}
+                        icon={
+                          colorScheme == "dark" ? <SunIcon /> : <MoonIcon />
+                        }
+                      ></IconButton>
                     </div>
                   </DrawerContent>
                 </Drawer>
@@ -188,6 +202,10 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/" element={<Info />} />
             </Routes>
+            <div className=" dark:bg-[#303f53] bg-[#d9d8d8] pt-1"></div>
+            <div className="footer text-center p-4 dark:bg-[#1F2937] bg-[#f2efef] dark:text-white text-cyan-600">
+              Ram Jayakumar 2023
+            </div>
           </div>
         </ChakraProvider>
       </VisibleWindowContext.Provider>

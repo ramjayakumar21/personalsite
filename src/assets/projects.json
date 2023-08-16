@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Ensemble",
+        "image": "https://github.com/ramjayakumar21/Ensemble/raw/main/frontend/public/reviewspage.png",
+        "link": "https://github.com/ramjayakumar21/Ensemble",
+        "date": "Jan 2023 - Present",
+        "description": "A web app to share music reviews with friends and view your own listening analytics.",
+        "tools": ["React", "Express", "Node", "MongoDB", "Spotify API", "Typescript"],
+        "id": 1
+    },
+    {
+        "name": "Regression",
+        "image": "./projects/dsci100.png", 
+        "link": "https://github.com/ramjayakumar21/group-project-dsci100",
+        "date": "Oct 2023 - Dec 2023",
+        "description": "An R notebook that uses forward selection and classification to determine the biggest factors that lead to heard disease.",
+        "tools": ["R", "Statistics", "Classification"],
+        "id": 2
+    },
+    {
+        "name": "Get Stuff Done",
+        "image": "https://user-images.githubusercontent.com/97275388/250467386-02e11e02-00c5-4da8-8ab6-d7212730cd26.png",
+        "link": "https://user-images.githubusercontent.com/97275388/250467386-02e11e02-00c5-4da8-8ab6-d7212730cd26.png",
+        "date": "Mar 2022 - Jul 2022",
+        "description": "A task manager web app built using React, as well as React-Draggable.",
+        "tools": ["React", "HTML", "CSS", "npm"],
+        "id": 3
+    },
+    {
+        "name": "myGarden Plant Manager",
+        "image": "./projects/mygardenmanager.png",
+        "link": "https://github.com/ramjayakumar21/GardenManager",
+        "date": "Jan 2022 - Apr 2022",
+        "description": "A desktop application to manage a virtual garden. Used as introduction to Test Driven Developemnt and OOP.",
+        "tools": ["Java", "JUnit", "Swing"],
+        "id": 4
+    },
+    {
+        "name": "MissionPlanner Scripts",
+        "image": "https://i.imgur.com/2Z2Z3ZM.png",
+        "link": "",
+        "date": "Jan 2023 - May 2023",
+        "description": "API for communicating flight paths to drone, as well as calculating optimal path across predetermined boundaries.",
+        "tools": ["Python", "Insomnia", "MissionPlanner"],
+        "id": 4
+    }
+    
+
+]
