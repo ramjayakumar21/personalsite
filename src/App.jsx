@@ -141,8 +141,8 @@ function App() {
                     icon={<HamburgerIcon />}
                   ></IconButton>
                 </div>
-                <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
-                  <DrawerOverlay />
+                <Drawer isOpen={isOpen} placement="right" onClose={onClose} >
+                  <DrawerOverlay width="full" h="full" />
                   <DrawerContent>
                     <DrawerCloseButton size="lg" />
                     <div className="gap-1 mr-5 p-1 px-3 rounded-md flex-col justify-end">
