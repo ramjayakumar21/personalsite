@@ -1,3 +1,5 @@
+import { Tag } from "@chakra-ui/react";
+
 export default function ExperienceModules(props) {
 
     let experience = props.exp;
@@ -13,6 +15,13 @@ export default function ExperienceModules(props) {
                 <div className="pt-2"><em>{experience.position}</em> <br></br> <em>{experience.daterange}</em></div>
                 <div className="pt-2"></div>
                 <div>{experience.description}</div>
+                <br></br>
+                {experience.skills.map(element => {
+                    return <Tag className="m-1" size="lg" variant="solid" colorScheme="blue">
+                    {element}
+                  </Tag>
+                })
+                }
             </div>
         </div>
     )

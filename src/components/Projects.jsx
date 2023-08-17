@@ -16,7 +16,7 @@ export default function Projects() {
           <h1 className="text-2xl text-center mb-1 dark:text-white">LANGUAGES</h1>
           {langArray.map((tool) => {
             return (
-              <Tag className="m-1" size="lg" variant="solid" colorScheme="blue">
+              <Tag className="m-1" _hover={{colorScheme:"purple"}} size="lg" variant="solid" colorScheme="blue">
                 {tool}
               </Tag>
             );

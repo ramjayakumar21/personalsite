@@ -8,7 +8,7 @@ export default function Info() {
     
     return (
         <div className="">
-            <div className="info text-slate-100 bg-gradient-to-r p-10 from-purple-500 via-red-600 background-animate to-blue-500  gap-10">
+            <div className="info text-slate-100 bg-gradient-to-r p-10 from-purple-500 via-red-600 background-animate to-blue-500 md:h-screen gap-10 ">
                 
                 <div className="md:flex items-center gap-10 transition-transform ease-in duration-300 ">
                     <img className='animate-fade_grow_in drop-shadow-2xl mb-5 w-72 h-72 transition-all hover:scale-105 ease-in-out' src="/Ram-headshot.png"></img>
@@ -31,7 +31,7 @@ export default function Info() {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center animate-fade_grow_in" style={{animationDuration:"1.2s"}} >
                     <div className="text-xl mt-5 rounded-lg p-5 w-9/12 bg-slate-800 bg-opacity-70">
                         I am a third year CPSC student at the University of British Columbia with a passion for software development and data science.
                         <br></br>

@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,jsx}", "./index.html"],
+  experimental: {
+    optimizeUniversalDefaults: true
+  },
   theme: {
     extend: {
       animation: {
@@ -12,7 +15,7 @@ export default {
             transform: 'translateY(50px)', opacity: '0',
           },
           '100%': {
-            transform: 'translateY(0px)',
+            transform: 'translateY(0px)', opacity: '100'
           },
         },
       },
