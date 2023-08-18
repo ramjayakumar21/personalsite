@@ -14,6 +14,13 @@
 
 }
 
+@media (pointer:none), (pointer:coarse) {
+    .background-animate {
+      background-size: 400%;
+  
+      animation:none
+    }
+}
 
 
 h1 {
@@ -26,13 +33,6 @@ h1 {
   animation: AnimationName 30s ease infinite;
 }
 
-@media (pointer:none), (pointer:coarse) {
-  .background-animate {
-    background-size: 400%;
-
-    animation:none
-  }
-}
 
 @keyframes AnimationName {
   0%,
