@@ -20,7 +20,7 @@ import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import "./index.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Projects from "./components/Projects";
-import Info from "./components/Info";
+import Main from "./components/Main";
 import Contact from "./components/About";
 import Article from "./components/Article";
 import Experience from "./components/Experience";
@@ -195,13 +195,14 @@ function App() {
           </Tabs>
 
           <div className="dark:bg-[#1F2937] bg-[#f2efef] text-white font-mono">
-            <Routes>
-              <Route path="/projects/:id" element={<Article />} />
-              <Route path="/experience" element={<Experience />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/" element={<Info />} />
-            </Routes>
+          <div className=" dark:bg-[#303f53] bg-[#d9d8d8] pb-1"></div>
+              <Routes>
+                <Route path="/projects/:id" element={<Article />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/" element={<Main />} />
+              </Routes>
             <div className=" dark:bg-[#303f53] bg-[#d9d8d8] pt-1"></div>
             <div className="footer text-center p-4 dark:bg-[#1F2937] bg-[#f2efef] dark:text-white text-cyan-600">
               Ram Jayakumar 2023

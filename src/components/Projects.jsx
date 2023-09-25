@@ -10,7 +10,7 @@ export default function Projects() {
 
 
   return (
-    <div className="px-10 text-black">
+    <div className="px-10 text-black mt-5">
       <div className="flex justify-center flex-wrap gap-5">
         <div className="tools mb-2 max-w-xl">
           <h1 className="text-2xl text-center mb-1 dark:text-white">LANGUAGES</h1>
