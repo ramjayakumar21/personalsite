@@ -24,6 +24,7 @@ import Main from "./components/Main";
 import Contact from "./components/About";
 import Article from "./components/Article";
 import Experience from "./components/Experience";
+import {Sugar} from 'react-preloaders';
 
 const VisibleWindowContext = createContext();
 
@@ -193,7 +194,8 @@ function App() {
               </TabList>
             </div>
           </Tabs>
-
+          {/* Preloader */}
+          <Sugar background="#1F2937" color={'#f2efef'}/>  
           <div className="dark:bg-[#1F2937] bg-[#f2efef] text-white font-mono">
           <div className=" dark:bg-[#303f53] bg-[#d9d8d8] pb-1"></div>
               <Routes>

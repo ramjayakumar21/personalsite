@@ -22,6 +22,11 @@
     }
 }
 
+.content {
+  min-width: none;
+  display: flex;
+  justify-content: baseline;
+}
 
 h1 {
   font-size: large;

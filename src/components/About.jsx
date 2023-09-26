@@ -5,19 +5,23 @@ export default function Contact(props) {
         <div className="about p-10 dark:text-white text-black">
             
             <div className="flex flex-col md:flex-row gap-8">
-                <p className=""><span className="text-blue-400">Hey there!</span> My name is Ram Jayakumar and I am a third year
+                <p className=""><span className="text-sky-600">Hey there!</span> My name is Ram Jayakumar and I am a third year
                 Computer Science and Statistics student at the University of British Columbia.
                 I have completed multiple CS courses including CPSC 210 - Software Construction and
                 have a thorough understanding of Java and C++, and am currently working on the MERN stack with React.
                 <br></br>
                 <br></br>
-                <p>Feel free to contact me through my email or use the form!</p>
+                <p>I have interests in full-stack web applications, embedded development, and data science. When I'm not busy grinding away at class, I enjoy my free time listening to music, playing basketball, and watching wet paint dry! Feel free to message me about anything!</p>
+                <br></br>
+                <br></br>
+                <p>Feel free to contact me through my email via <strong className="text-sky-600">ramjayakumar21@gmail.com</strong> or use the form!</p>
                 </p>
                 
                 
-                <img src="/Ram-headshot.png" className="w-72 h-72"></img>
+                <img src="/Ram-headshot.png" className="w-72 h-72 outline"></img>
+                
             </div>
-            
+            <div className="mb-12"></div>
         
             
         </div>
