@@ -1,4 +1,4 @@
-import { useState, createContext } from "react";
+import { useState, createContext, useEffect } from "react";
 import {
   ChakraProvider,
   Tabs,
@@ -26,6 +26,7 @@ import Article from "./components/Article";
 import Experience from "./components/Experience";
 import {Sugar} from 'react-preloaders';
 
+
 const VisibleWindowContext = createContext();
 
 function App() {
@@ -33,9 +34,20 @@ function App() {
   const [visibleWindow, setVisibleWindow] = useState("projects");
   const vis = { visibleWindow, setVisibleWindow };
   const [colorScheme, setColorScheme] = useState("light");
-
+  const [loading, setLoading] = useState(true);
   // exprience will have uas and ubc rapid blog, projects will also be blog posts about projects
-
+  
+  useEffect(() => {
+    new Promise(res => setTimeout(res, 500))
+      .then(res => {
+        setLoading(false);
+      })
+      .catch(err => {
+        setLoading(false);
+      });
+  }, []);
+  
+  
   // function taken from stackoverflow
   function applyPreferredColorScheme(scheme) {
     if (colorScheme == "light") {
@@ -195,7 +207,7 @@ function App() {
             </div>
           </Tabs>
           {/* Preloader */}
-          <Sugar background="#1F2937" color={'#f2efef'}/>  
+          <Sugar background="#1F2937" customLoading={loading} color={'#f2efef'}/>  
           <div className="dark:bg-[#1F2937] bg-[#f2efef] text-white font-mono">
           <div className=" dark:bg-[#303f53] bg-[#d9d8d8] pb-1"></div>
               <Routes>

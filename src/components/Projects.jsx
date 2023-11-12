@@ -10,7 +10,7 @@ export default function Projects() {
 
 
   return (
-    <div className="px-10 text-black mt-5">
+    <div className="px-20 text-black mt-6 mb-7">
       <div className="flex justify-center flex-wrap gap-5">
         <div className="tools mb-2 max-w-xl">
           <h1 className="text-2xl text-center mb-1 dark:text-white">LANGUAGES</h1>
@@ -41,7 +41,7 @@ export default function Projects() {
     <div className="my-2"><Divider /></div>
 
     
-    <div className="flex gap-10 flex-wrap justify-center">
+    <div className="flex gap-10 flex-wrap mt-10 justify-center">
         {projectsArray.map((project, i) => {
             return (
             
