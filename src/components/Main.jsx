@@ -13,7 +13,7 @@ export default function Main() {
                 <div className="flex md:flex-row flex-col justify-center items-center gap-10 transition-transform ease-in duration-300 ">
                     <img className='animate-fade_grow_in drop-shadow-2xl w-72 h-72 transition-all hover:scale-105 ease-in-out' src="/Ram-headshot.png"></img>
                     <div className="animate-fade_grow_in flex flex-col items-center">
-                        <h1 className="text-5xl md:text-5xl object-cover mb-2 drop-shadow-2xl">:// Hi! I'm <span className="text-5xl md:text-7xl font-semibold hover:underline hover:decoration-solid">Ram Jayakumar</span></h1>
+                        <h1 className="text-5xl md:text-5xl object-cover mb-2 drop-shadow-2xl">:// Hi! I'm <span className="text-5xl md:text-7xl font-semibold whitespace-nowrap hover:underline hover:decoration-solid">Ram Jayakumar</span></h1>
                         <p className="text-l md:text-2xl">3rd Year Computer Science student @ UBC</p>
                         <div className="buttons flex md:flex-row flex-col gap-2 mt-6 flex-wrap items-center">
                             <div className="flex items-center p-2 bg-stone-800 w-fit rounded-md">

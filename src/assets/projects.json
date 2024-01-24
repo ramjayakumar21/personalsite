@@ -1,5 +1,14 @@
 [
     {
+        "name": "DuoASL - 🥇 1st Place at nwHacks 2024",
+        "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/730/170/datas/gallery.jpg",
+        "link": "https://devpost.com/software/duoasl",
+        "date": "Jan 2024 - Jan 2024",
+        "description": "DuoASL allows users to learn ASL gestures, leveraging the power of a computer vision Neural Network model to provide real-time feedback.",
+        "tools": ["Next.js", "Flask", "TensorFlow", "MediaPipe", "Auth0", "OpenCV"],
+        "id": 3
+    },
+    {
         "name": "Ensemble",
         "image": "https://github.com/ramjayakumar21/Ensemble/raw/main/frontend/public/reviewspage.png",
         "link": "https://github.com/ramjayakumar21/Ensemble",
