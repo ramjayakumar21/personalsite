@@ -1,69 +1,80 @@
 [
-    {
-        "name": "DuoASL - 🥇 1st Place at nwHacks 2024",
-        "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/730/170/datas/gallery.jpg",
-        "link": "https://devpost.com/software/duoasl",
-        "date": "Jan 2024 - Jan 2024",
-        "description": "DuoASL allows users to learn ASL gestures, leveraging the power of a computer vision Neural Network model to provide real-time feedback.",
-        "tools": ["Next.js", "Flask", "TensorFlow", "MediaPipe", "Auth0", "OpenCV"],
-        "id": 3
-    },
-    {
-        "name": "Ensemble",
-        "image": "https://github.com/ramjayakumar21/Ensemble/raw/main/frontend/public/reviewspage.png",
-        "link": "https://github.com/ramjayakumar21/Ensemble",
-        "date": "Jan 2023 - Present",
-        "description": "A web app to share music reviews with friends and view your own listening analytics.",
-        "tools": ["React", "Express", "Node", "MongoDB", "Spotify API", "Typescript"],
-        "id": 1
-    },
-    {
-        "name": "Collabr",
-        "image": "https://4.bp.blogspot.com/-ou-a_Aa1t7A/W6IhNc3Q0gI/AAAAAAAAD6Y/pwh44arKiuM_NBqB1H7Pz4-7QhUxAgZkACLcBGAs/s1600/spring-boot-logo.png",
-        "link": "",
-        "date": "Jan 2023 - May 2023",
-        "description": "Spring Boot application for live chat messaging and drawing, containerized via Docker.",
-        "tools": ["Java", "Spring Boot", "Angular", "Docker", "Kubernetes", "PostgreSQL"],
-        "id": 4
-    },
-    {
-        "name": "Regression",
-        "image": "./projects/dsci100.png", 
-        "link": "https://github.com/ramjayakumar21/group-project-dsci100",
-        "date": "Oct 2023 - Dec 2023",
-        "description": "An R notebook that uses forward selection and classification to determine the biggest factors that lead to heard disease.",
-        "tools": ["R", "Statistics", "Classification"],
-        "id": 2
-    },
-    
-    {
-        "name": "myGarden Plant Manager",
-        "image": "./projects/mygardenmanager.png",
-        "link": "https://github.com/ramjayakumar21/GardenManager",
-        "date": "Jan 2022 - Apr 2022",
-        "description": "A desktop application to manage a virtual garden. Used as introduction to Test Driven Developemnt and OOP.",
-        "tools": ["Java", "JUnit", "Swing"],
-        "id": 4
-    },
-    {
-        "name": "MissionPlanner Scripts",
-        "image": "https://ardupilot.org/planner/_images/mission_planner_screen_flight_plan.jpg",
-        "link": "",
-        "date": "Jan 2023 - May 2023",
-        "description": "API for communicating flight paths to drone, as well as calculating optimal path across predetermined boundaries.",
-        "tools": ["Python", "Insomnia", "MissionPlanner"],
-        "id": 4
-    },
-    {
-        "name": "Get Stuff Done",
-        "image": "https://user-images.githubusercontent.com/97275388/250467386-02e11e02-00c5-4da8-8ab6-d7212730cd26.png",
-        "link": "https://user-images.githubusercontent.com/97275388/250467386-02e11e02-00c5-4da8-8ab6-d7212730cd26.png",
-        "date": "Mar 2022 - Jul 2022",
-        "description": "A task manager web app built using React, as well as React-Draggable.",
-        "tools": ["React", "HTML", "CSS", "npm"],
-        "id": 3
-    }
-    
-    
+  {
+    "name": "DuoASL - 🥇 1st Place at nwHacks 2024",
+    "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/730/170/datas/gallery.jpg",
+    "link": "https://devpost.com/software/duoasl",
+    "date": "Jan 2024 - Jan 2024",
+    "description": "DuoASL allows users to learn ASL gestures, leveraging the power of a computer vision Neural Network model to provide real-time feedback.",
+    "tools": ["Next.js", "Flask", "TensorFlow", "MediaPipe", "Auth0", "OpenCV"],
+    "id": 3
+  },
+  {
+    "name": "Ensemble",
+    "image": "https://github.com/ramjayakumar21/Ensemble/raw/main/frontend/public/reviewspage.png",
+    "link": "https://github.com/ramjayakumar21/Ensemble",
+    "date": "Jan 2023 - Sep 2023",
+    "description": "A web app to share music reviews with friends and view your own listening analytics.",
+    "tools": [
+      "React",
+      "Express",
+      "Node",
+      "MongoDB",
+      "Spotify API",
+      "Typescript"
+    ],
+    "id": 1
+  },
+  {
+    "name": "Collabr",
+    "image": "https://4.bp.blogspot.com/-ou-a_Aa1t7A/W6IhNc3Q0gI/AAAAAAAAD6Y/pwh44arKiuM_NBqB1H7Pz4-7QhUxAgZkACLcBGAs/s1600/spring-boot-logo.png",
+    "link": "",
+    "date": "Jan 2023 - May 2023",
+    "description": "Spring Boot application for live chat messaging and drawing, containerized via Docker.",
+    "tools": [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "Docker",
+      "Kubernetes",
+      "PostgreSQL"
+    ],
+    "id": 4
+  },
+  {
+    "name": "Regression",
+    "image": "./projects/dsci100.png",
+    "link": "https://github.com/ramjayakumar21/group-project-dsci100",
+    "date": "Oct 2023 - Dec 2023",
+    "description": "An R notebook that uses forward selection and classification to determine the biggest factors that lead to heart disease.",
+    "tools": ["R", "Statistics", "Classification"],
+    "id": 2
+  },
 
+  {
+    "name": "myGarden Plant Manager",
+    "image": "./projects/mygardenmanager.png",
+    "link": "https://github.com/ramjayakumar21/GardenManager",
+    "date": "Jan 2022 - Apr 2022",
+    "description": "A desktop application to manage a virtual garden. Used as introduction to Test Driven Developemnt and OOP.",
+    "tools": ["Java", "JUnit", "Swing"],
+    "id": 4
+  },
+  {
+    "name": "MissionPlanner Scripts",
+    "image": "https://ardupilot.org/planner/_images/mission_planner_screen_flight_plan.jpg",
+    "link": "",
+    "date": "Jan 2023 - May 2023",
+    "description": "API for communicating flight paths to drone, as well as calculating optimal path across predetermined boundaries.",
+    "tools": ["Python", "Insomnia", "MissionPlanner"],
+    "id": 4
+  },
+  {
+    "name": "Get Stuff Done",
+    "image": "https://user-images.githubusercontent.com/97275388/250467386-02e11e02-00c5-4da8-8ab6-d7212730cd26.png",
+    "link": "https://user-images.githubusercontent.com/97275388/250467386-02e11e02-00c5-4da8-8ab6-d7212730cd26.png",
+    "date": "Mar 2022 - Jul 2022",
+    "description": "A task manager web app built using React, as well as React-Draggable.",
+    "tools": ["React", "HTML", "CSS", "npm"],
+    "id": 3
+  }
 ]

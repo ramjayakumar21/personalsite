@@ -1,53 +1,97 @@
 import Window from "./Window";
 import Contact from "./About";
-import { Tag, Card, CardHeader, CardBody, CardFooter, Image, Button, ButtonGroup, Stack, Divider } from "@chakra-ui/react";
+import {
+  Tag,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Image,
+  Button,
+  ButtonGroup,
+  Stack,
+  Divider,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import projectsArray from "../assets/projects.json"
+import projectsArray from "../assets/projects.json";
 
 export default function Projects() {
-  let langArray = ["Javascript", "Typescript","R", "Java", "Python", "C++", "HTML", "CSS"];
-  let toolsArray = ["React.js", "Express.js", "Node.js", "MongoDB", "Django", "TailwindCSS", "Docker", "Github Actions", "Jest", "Azure Console"];
-
+  let langArray = [
+    "Javascript",
+    "Typescript",
+    "R",
+    "Java",
+    "Python",
+    "C++",
+    "HTML",
+    "CSS",
+  ];
+  let toolsArray = [
+    "React.js",
+    "Express.js",
+    "Node.js",
+    "MongoDB",
+    "Django",
+    "TailwindCSS",
+    "Docker",
+    "Github Actions",
+    "Jest",
+    "Azure Console",
+  ];
 
   return (
-    <div className="px-20 text-black mt-6 mb-7">
-      <div className="flex justify-center flex-wrap gap-5">
-        <div className="tools mb-2 max-w-xl">
-          <h1 className="text-2xl text-center mb-1 dark:text-white">LANGUAGES</h1>
+    <div className="text-black mb-7">
+      <div className="flex justify-center flex-wrap gap-5 p-3">
+        <div className="tools max-w-xl">
+          <h1 className="text-2xl text-center mb-1 text-cyan-600 dark:text-white">
+            languages
+          </h1>
           {langArray.map((tool) => {
             return (
-              <Tag className="m-1" _hover={{colorScheme:"purple"}} size="lg" variant="solid" colorScheme="blue">
+              <Tag
+                className="m-1"
+                _hover={{ colorScheme: "purple" }}
+                size="lg"
+                variant="solid"
+                colorScheme="blue"
+              >
                 {tool}
               </Tag>
             );
           })}
-          </div>
-          
-          <div className="tools mb-2 max-w-xl">
-            <h1 className="text-2xl text-center mb-1 dark:text-white">TOOLS & FRAMEWORKS</h1>
-            {toolsArray.map((tool) => {
-              return (
-                <Tag className="m-1" size="lg" variant="solid" colorScheme="blue">
-                  {tool}
-                </Tag>
-              );
-            })}
-        
-          </div>
-      
-        
-      </div>
-      
-    <div className="my-2"><Divider /></div>
+        </div>
 
-    
-    <div className="flex gap-10 flex-wrap mt-10 justify-center">
-        {projectsArray.map((project, i) => {
+        <div className="tools mb-2 max-w-xl">
+          <h1 className="text-2xl text-center mb-1 dark:text-white text-cyan-600">
+            tools & frameworks
+          </h1>
+          {toolsArray.map((tool) => {
             return (
-            
-                <div className="animate-fade_grow_in" style={{ "animation-duration": 1 + (0.2 * i) + "s" }}>
-                  <Card maxW="md" width={"400px"} className="hover:scale-105 transition-all">
-                  <Link to={project.link}>
+              <Tag className="m-1" size="lg" variant="solid" colorScheme="blue">
+                {tool}
+              </Tag>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="my-2">
+        <Divider />
+      </div>
+
+      <div className="flex gap-10 flex-wrap mt-10 justify-center">
+        {projectsArray.map((project, i) => {
+          return (
+            <div
+              className="animate-fade_grow_in"
+              style={{ "animation-duration": 1 + 0.2 * i + "s" }}
+            >
+              <Card
+                maxW="md"
+                width={"400px"}
+                className="hover:scale-105 transition-all"
+              >
+                <Link to={project.link}>
                   <CardBody>
                     <Image
                       src={project.image}
@@ -66,24 +110,29 @@ export default function Projects() {
                   </CardBody>
                   <Divider />
                   <CardFooter>
-                  <div className="">
-                    {project.tools.map((tool) => {
-                      return (
-                        <Tag className="p-2 m-1" size="md" variant="solid" colorScheme="blue">
-                          {tool}
-                        </Tag>
-                      );
-                    })}
-                  </div>
+                    <div className="">
+                      {project.tools.map((tool) => {
+                        return (
+                          <Tag
+                            className="p-2 m-1"
+                            size="md"
+                            variant="solid"
+                            colorScheme="blue"
+                          >
+                            {tool}
+                          </Tag>
+                        );
+                      })}
+                    </div>
                   </CardFooter>
-                  </Link>
-                  </Card>
-                </div>
-            )
+                </Link>
+              </Card>
+            </div>
+          );
         })}
-    </div>
+      </div>
 
-{/* <a href="#" class="group text-sky-600 transition duration-300">
+      {/* <a href="#" class="group text-sky-600 transition duration-300">
 Link
 
 </a>

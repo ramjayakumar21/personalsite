@@ -24,8 +24,7 @@ import Main from "./components/Main";
 import Contact from "./components/About";
 import Article from "./components/Article";
 import Experience from "./components/Experience";
-import {Sugar} from 'react-preloaders';
-
+import { Sugar } from "react-preloaders";
 
 const VisibleWindowContext = createContext();
 
@@ -36,18 +35,18 @@ function App() {
   const [colorScheme, setColorScheme] = useState("light");
   const [loading, setLoading] = useState(true);
   // exprience will have uas and ubc rapid blog, projects will also be blog posts about projects
-  
+
   useEffect(() => {
-    new Promise(res => setTimeout(res, 500))
-      .then(res => {
+    applyPreferredColorScheme(colorScheme);
+    new Promise((res) => setTimeout(res, 500))
+      .then((res) => {
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         setLoading(false);
       });
   }, []);
-  
-  
+
   // function taken from stackoverflow
   function applyPreferredColorScheme(scheme) {
     if (colorScheme == "light") {
@@ -102,48 +101,38 @@ function App() {
       <VisibleWindowContext.Provider value={vis}>
         <ChakraProvider>
           <Tabs variant="" size="lg" colorScheme="blue">
-            <div className="menu dark:bg-[#1F2937] bg-[#f2efef] dark:text-white text-cyan-600 md:block p-5 flex font-mono w-full">
+            <div className="menu  dark:bg-[#1F2937] bg-[#f2efef] dark:text-white text-cyan-600 md:block p-7 flex font-sans w-full align-center">
               <TabList>
-                <div className="text-4xl font-bold p-2 mr-auto">
+                <div className="text-4xl font-bold p-2 mr-auto w-3/4 ">
                   <Link to=".\">Ram Jayakumar</Link>
                 </div>
-                <div className="gap-1 mr-5 p-1 px-3 hidden md:flex rounded-md dark:text-white text-cyan-600">
-                  <div className="group">
-                    <Link to=".\">
-                      <Tab>Home</Tab>
-                      <span class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sky-600"></span>
-                    </Link>
-                  </div>
-                  <div className="group">
-                    <Link to=".\projects">
-                      <Tab>Projects</Tab>
-                      <span class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sky-600"></span>
-                    </Link>
-                  </div>
-                  <div className="group">
-                    <Link to=".\experience">
-                      <Tab>Experience</Tab>
-                      <span class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sky-600"></span>
-                    </Link>
-                  </div>
-                  <div className="group">
-                    <Link to=".\contact">
-                      <Tab>About</Tab>
-                      <span class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sky-600"></span>
-                    </Link>
-                  </div>
-                  <div className="ml-2">
-                    <IconButton
-                      colorScheme="blue"
-                      aria-label="Sidebar"
-                      size="lg"
-                      isRound={true}
-                      onClick={() => {
-                        applyPreferredColorScheme("light");
-                      }}
-                      icon={colorScheme == "dark" ? <SunIcon /> : <MoonIcon />}
-                    ></IconButton>
-                  </div>
+                <div className="navbar hidden md:flex bg-base-100 dark:bg-slate-700 rounded-3xl gap-3 justify-end w-fit px-4 drop-shadow-xl dark:text-cyan-300">
+                  <Link to=".\">
+                    <button className="btn btn-ghost text-xl">home</button>
+                  </Link>
+                  <Link to=".\projects">
+                    <button className="btn btn-ghost  text-xl">projects</button>
+                  </Link>
+                  <Link to=".\experience">
+                    <button className="btn btn-ghost text-xl">
+                      experience
+                    </button>
+                  </Link>
+                  {/* <Link to=".\contact">
+                    <button className="btn btn-ghost text-xl">about</button>
+                  </Link> */}
+                </div>
+                <div className="mt-2 ml-3 hidden md:block">
+                  <IconButton
+                    colorScheme="blue"
+                    aria-label="Sidebar"
+                    size="lg"
+                    isRound={true}
+                    onClick={() => {
+                      applyPreferredColorScheme("light");
+                    }}
+                    icon={colorScheme == "dark" ? <SunIcon /> : <MoonIcon />}
+                  ></IconButton>
                 </div>
                 <div className="block p-2 flex ml-20 md:hidden rounded-md">
                   <IconButton
@@ -154,7 +143,7 @@ function App() {
                     icon={<HamburgerIcon />}
                   ></IconButton>
                 </div>
-                <Drawer isOpen={isOpen} placement="right" onClose={onClose} >
+                <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
                   <DrawerOverlay width="full" h="full" />
                   <DrawerContent>
                     <DrawerCloseButton size="lg" />
@@ -207,20 +196,24 @@ function App() {
             </div>
           </Tabs>
           {/* Preloader */}
-          <Sugar background="#1F2937" customLoading={loading} color={'#f2efef'}/>  
-          <div className="dark:bg-[#1F2937] bg-[#f2efef] text-white font-mono">
-          <div className=" dark:bg-[#303f53] bg-[#d9d8d8] pb-1"></div>
-              <Routes>
-                <Route path="/projects/:id" element={<Article />} />
-                <Route path="/experience" element={<Experience />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/" element={<Main />} />
-              </Routes>
-            <div className=" dark:bg-[#303f53] bg-[#d9d8d8] pt-1"></div>
-            <div className="footer text-center p-4 dark:bg-[#1F2937] bg-[#f2efef] dark:text-white text-cyan-600">
-              Ram Jayakumar 2023
-            </div>
+          {/* <Sugar
+            background="#1F2937"
+            customLoading={loading}
+            color={"#f2efef"}
+          /> */}
+
+          <div className="dark:bg-[#1F2937] bg-[#f2efef] text-white font-sans">
+            <Routes>
+              <Route path="/projects/:id" element={<Article />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Main />} />
+            </Routes>
+            {/* <div className=" dark:bg-[#303f53] bg-[#d9d8d8] pt-1"></div> */}
+            <footer className="footer footer-center mt-5 p-4 dark:bg-[#1F2937] bg-[#f2efef] dark:text-white text-cyan-600">
+              Made by Ram Jayakumar
+            </footer>
           </div>
         </ChakraProvider>
       </VisibleWindowContext.Provider>
