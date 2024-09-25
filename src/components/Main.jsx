@@ -91,30 +91,34 @@ export default function Main() {
           </div>
         </div>
         <div className="text-black md:flex md:space-x-16">
-          <div className="card bg-base-100 bg-slate-200 w-96 shadow-xl mb-10 hover:scale-105 transition-all">
-            <figure>
-              <img src="./sap_logo.png" alt="Shoes" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Work Experience</h2>
-              <p>Learn more about the places I've worked at.</p>
-              <div className="card-actions justify-end"></div>
+          <a href="./experience">
+            <div className="card bg-base-100 bg-slate-200 w-96 shadow-xl mb-10 hover:scale-105 transition-all">
+              <figure>
+                <img src="./sap_logo.png" alt="Shoes" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Work Experience</h2>
+                <p>Learn more about the places I've worked at.</p>
+                <div className="card-actions justify-end"></div>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="card bg-base-100 bg-slate-200 w-96 shadow-xl mb-10 hover:scale-105 transition-all">
-            <figure>
-              <img
-                src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/730/170/datas/gallery.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Project Work</h2>
-              <p>Learn more about the projects I've worked on.</p>
-              <div className="card-actions justify-end"></div>
+          <a href="./projects">
+            <div className="card bg-base-100 bg-slate-200 w-96 shadow-xl mb-10 hover:scale-105 transition-all">
+              <figure>
+                <img
+                  src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/730/170/datas/gallery.jpg"
+                  alt="Shoes"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Project Work</h2>
+                <p>Learn more about the projects I've worked on.</p>
+                <div className="card-actions justify-end"></div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

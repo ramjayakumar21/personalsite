@@ -196,11 +196,11 @@ function App() {
             </div>
           </Tabs>
           {/* Preloader */}
-          {/* <Sugar
+          <Sugar
             background="#1F2937"
             customLoading={loading}
             color={"#f2efef"}
-          /> */}
+          />
 
           <div className="dark:bg-[#1F2937] bg-[#f2efef] text-white font-sans">
             <Routes>
