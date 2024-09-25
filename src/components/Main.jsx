@@ -22,7 +22,7 @@ export default function Main() {
                   Ram Jayakumar
                 </span>
               </h1>
-              <p className="text-l md:text-2xl text-black dark:text-white">
+              <p className="text-m md:text-2xl text-black dark:text-white">
                 4th Year Computer Science Student @ UBC
               </p>
               <div className="buttons flex md:flex-row flex-col gap-2 mt-6 flex-wrap items-center">
