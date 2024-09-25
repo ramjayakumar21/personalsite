@@ -16,9 +16,9 @@ export default function Main() {
               src="/Ram-headshot.png"
             ></img>
             <div className="flex flex-col items-center">
-              <h1 className="text-5xl md:text-7xl object-cover mb-2 text-black dark:text-white text-center">
+              <h1 className="text-4xl md:text-7xl object-cover mb-2 text-black dark:text-white text-center">
                 Hi! I'm{" "}
-                <span className="gradient-text text-5xl md:text-7xl font-semibold whitespace-nowrap">
+                <span className="gradient-text text-4xl md:text-7xl font-semibold whitespace-nowrap">
                   Ram Jayakumar
                 </span>
               </h1>
