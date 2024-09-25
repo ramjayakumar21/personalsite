@@ -7,10 +7,10 @@ export default function ExperienceModules(props) {
     <div
       style={{ animationDuration: "1.2s" }}
       className="animate-fade_grow_in ease-linear hover:cursor-pointer transition-all first:mt-0 hover:outline hover:outline-4 outline-[#9ec3f6]  bg-slate-600
-         p-7 mt-4 w-4/5 flex flex-col items-center md:flex-row rounded-md gap-3 justify-center"
+         p-6 mt-4 w-11/12 flex flex-col items-center md:flex-row rounded-md gap-3 justify-between"
     >
       <img width="200px" height="200px" src={experience.img}></img>
-      <div className="ml-5">
+      <div className="w-3/4 ">
         <strong>
           <h1 className="text-3xl md:text-left text-center">
             {experience.name}

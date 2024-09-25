@@ -9,7 +9,7 @@ export default function Main() {
   return (
     <div className="">
       <div className="info flex flex-col gap-10 items-center ">
-        <div className="card mt-4 bg-base-100 w-10/12 shadow-xl p-10 animate-fade_grow_in dark:bg-slate-700">
+        <div className="card mt-4 bg-base-100 min-w-10/12 shadow-xl p-10 animate-fade_grow_in dark:bg-slate-700">
           <div className="flex md:flex-row flex-col justify-center items-center gap-10 transition-transform ease-in duration-300 text-bla">
             <img
               className="w-5/6 md:w-72 transition-all hover:scale-105 ease-in-out"

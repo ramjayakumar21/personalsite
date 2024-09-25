@@ -51,8 +51,14 @@ function App() {
   function applyPreferredColorScheme(scheme) {
     if (colorScheme == "light") {
       setColorScheme("dark");
+      document
+        .querySelector(":root")
+        .style.setProperty("background-color", "#f2efef");
     } else {
       setColorScheme("light");
+      document
+        .querySelector(":root")
+        .style.setProperty("background-color", "#1F2937");
     }
 
     console.log(document.styleSheets);
@@ -147,20 +153,20 @@ function App() {
                   <DrawerOverlay width="full" h="full" />
                   <DrawerContent>
                     <DrawerCloseButton size="lg" />
-                    <div className="gap-1 mr-5 p-1 px-3 rounded-md flex-col justify-end">
+                    <div className="gap-1 mr-5 p-1 px-3 rounded-md flex-col justify-end text-cyan-600">
                       <div>
                         <Link to=".\" onClick={onClose}>
-                          <Tab>Home</Tab>
+                          <Tab>home</Tab>
                         </Link>
                         <Link to=".\projects" onClick={onClose}>
-                          <Tab>Projects</Tab>
+                          <Tab>projects</Tab>
                         </Link>
                         <Link to=".\experience" onClick={onClose}>
-                          <Tab>Experience</Tab>
+                          <Tab>experience</Tab>
                         </Link>
-                        <Link to=".\contact" onClick={onClose}>
+                        {/* <Link to=".\contact" onClick={onClose}>
                           <Tab>About</Tab>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                     <div className="mt-auto p-1 px-3 mb-8 flex flex-col gap-2">
@@ -168,13 +174,13 @@ function App() {
 
                       <a
                         href="https://github.com/ramjayakumar21"
-                        className="bg-slate-900 p-3 hover:bg-slate-600 rounded-md text-white"
+                        className="bg-slate-900 p-3 hover:bg-slate-600 rounded-md text-white flex flex-row items-center justify-center gap-1"
                       >
                         <i class="fa-brands fa-github fa-xl "></i> Github
                       </a>
                       <a
                         href="https://www.linkedin.com/in/ram-jayakumar-2a096420b/"
-                        className="bg-blue-600 p-3 hover:bg-blue-700 rounded-md text-white"
+                        className="bg-blue-600 p-3 hover:bg-blue-700 rounded-md flex flex-row text-white items-center justify-center gap-1"
                       >
                         <i class="fa-brands fa-linkedin fa-xl"></i> Linkedin
                       </a>
@@ -197,9 +203,9 @@ function App() {
           </Tabs>
           {/* Preloader */}
           <Sugar
-            background="#1F2937"
+            background={colorScheme == "dark" ? "#f2efef" : "#f2efef"}
             customLoading={loading}
-            color={"#f2efef"}
+            color={colorScheme == "dark" ? "#0891b2" : "#0891b2"}
           />
 
           <div className="dark:bg-[#1F2937] bg-[#f2efef] text-white font-sans">
