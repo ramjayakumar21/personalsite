@@ -4,9 +4,9 @@ export default function ExperienceModules(props) {
   let experience = props.exp;
 
   return (
-    <div
-      style={{ animationDuration: "1.2s" }}
-      className="animate-fade_grow_in ease-linear hover:cursor-pointer transition-all first:mt-0 hover:outline hover:outline-4 outline-[#9ec3f6]  bg-slate-600
+    <div             
+      style={{ animationDuration: 1 + 0.2 * props.i + "s"  }}
+      className="animate-fade_grow_in a ease-linear hover:cursor-pointer transition-all first:mt-0 hover:outline hover:outline-4 outline-[#9ec3f6]  bg-slate-600
          p-6 mt-4 w-11/12 flex flex-col items-center md:flex-row rounded-md gap-3 justify-between"
     >
       <img width="200px" height="200px" src={experience.img}></img>

@@ -1,8 +1,40 @@
 [
+    {
+    "name": "Amazon",
+    "position": "Software Engineer Intern",
+    "daterange": "May 2025 to Sep 2025",
+    "location": "Vancouver, BC",
+    "skills": [
+      "Python",
+      "AWS Lambda/ECS",
+      "AWS Bedrock",
+      "MCP",
+      "AWS CloudFormation"
+    ],
+    "description": "Developed AI powered ticketing system using AWS Bedrock to enhance support efficiency.",
+    "img": "./amazon.png",
+    "link": ""
+  },
+    {
+    "name": "Tesla",
+    "position": "Software Engineer Intern",
+    "daterange": "Jan 2025 to Apr 2025",
+    "location": "Palo Alto, CA",
+    "skills": [
+      "C++",
+      "Qt",
+      "Vue",
+      "Kubernetes",
+      "Linux"
+    ],
+    "description": "Worked on in-car vehicle system, enhancing user interface and optimizing backend services for performance.",
+    "img": "./tesla.png",
+    "link": ""
+  },
   {
     "name": "SAP",
     "position": "Software Engineer Intern",
-    "daterange": "May 2024 to Present",
+    "daterange": "May 2024 to Dec 2024",
     "location": "Vancouver, BC",
     "skills": [
       "Angular",

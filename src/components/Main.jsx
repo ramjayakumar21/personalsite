@@ -12,8 +12,8 @@ export default function Main() {
         <div className="card mt-4 bg-base-100 w-5/6 shadow-xl p-10 animate-fade_grow_in dark:bg-slate-700">
           <div className="flex md:flex-row flex-col justify-center items-center gap-10 transition-transform ease-in duration-300 text-bla">
             <img
-              className="w-5/6 md:w-72 transition-all hover:scale-105 ease-in-out"
-              src="/Ram-headshot.png"
+              className="w-4/6 md:w-72 transition-all hover:scale-105 ease-in-out rounded-full aspect-square object-cover"
+              src="/ram.png"
             ></img>
             <div className="flex flex-col items-center">
               <h1 className="text-4xl md:text-7xl object-cover mb-2 text-black dark:text-white text-center">
@@ -92,9 +92,9 @@ export default function Main() {
         </div>
         <div className="text-black md:flex md:space-x-16">
           <a href="./experience">
-            <div className="card bg-base-100 bg-slate-200 w-96 shadow-xl mb-10 hover:scale-105 transition-all">
+            <div className="card bg-base-100 bg-slate-200 w-96 h-5/6 shadow-xl mb-10 hover:scale-105 transition-all">
               <figure>
-                <img src="./sap_logo.png" alt="Shoes" />
+                <img src="./tesla.png" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Work Experience</h2>
